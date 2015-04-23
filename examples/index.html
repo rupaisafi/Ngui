@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html data-ng-app="ui">
+<head>
+    <title>My UI</title>
+    <link href="stylesheet/index.css" rel="stylesheet" />
+</head>
+<body data-ng-controller="NGuiBodyController">
+    <section data-ng-controller="NGuiItemController">
+        <section class="ui-tab">
+            <section class="tab-menu">
+                <section data-ng-repeat="item in tab.list" class="tab-menu-item" data-ng-click="tab.event.onclick($index)" data-ng-class="tab.item[$index].classes" data-ng-init="min=$first;max=$last">{{item}}</section>
+            </section>
+            <section class="tab-body">
+                <section data-ng-repeat="content in tab.contents" class="tab-body-item" data-ng-class="tab.content[$index].classes">
+                    <section>{{content}}</section>
+                    <section class="ajax-loader">
+                        <section class="loader-item"></section>
+                        <section class="loader-item"></section>
+                        <section class="loader-item"></section>
+                        <section class="loader-item"></section>
+                        <section class="loader-item"></section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+
+
+
+    <script src="javascript/angular/jquery.min.js"></script>
+    <script src="javascript/angular/angular.min.js"></script>
+    <script src="javascript/angular/angular-animate.min.js"></script>
+    <script src="javascript/index.js"></script>
+</body>
+</html>

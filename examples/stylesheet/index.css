@@ -1,0 +1,204 @@
+@keyframes loading {
+    from {
+        background-color: #fff;
+    }
+
+    to {
+        background-color: #39f;
+    }
+}
+
+@-moz-keyframes loading {
+    from {
+        background-color: #fff;
+    }
+
+    to {
+        background-color: #39f;
+    }
+}
+
+@-webkit-keyframes loading {
+    from {
+        background-color: #fff;
+    }
+
+    to {
+        background-color: #39f;
+    }
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 13px;
+    padding: 30px 100px;
+    border: 1px solid #dadada;
+    height: calc(100% - 78px);
+    font-family: 'Trebuchet MS',sans-serif;
+}
+
+
+.ui-tab {
+    border-style: solid;
+    border-color: #dadada;
+    border-width: 0px 0px 0px 0px;
+}
+
+    .ui-tab .tab-menu {
+        border-style: solid;
+        border-color: #3399ff;
+        border-width: 0px 0px 1px 0px;
+    }
+
+        .ui-tab .tab-menu:before,
+        .ui-tab .tab-menu:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .ui-tab .tab-menu .tab-menu-item {
+            float: left;
+            width: 100px;
+            cursor: pointer;
+            text-align: center;
+            border-style: solid;
+            border-color: #dadada;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            margin: 0px 3px 3px 0px;
+            padding: 5px 6px 5px 6px;
+            border-width: 1px 1px 1px 1px;
+            transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+        }
+
+            .ui-tab .tab-menu .tab-menu-item.active {
+                bottom: 0;
+                cursor: default;
+                position: relative;
+                border-top-width: 5px;
+                background-color: #fff;
+                border-color: #3399ff;
+                margin: 0px 3px -1px 0px;
+                border-bottom-color: #fff;
+            }
+
+            .ui-tab .tab-menu .tab-menu-item::selection {
+                background-color: transparent;
+            }
+
+            .ui-tab .tab-menu .tab-menu-item::-moz-selection {
+                background-color: transparent;
+            }
+
+    .ui-tab .tab-body {
+        position: relative;
+        border-style: solid;
+        border-color: #3399ff;
+        border-width: 0px 1px 0px 1px;
+    }
+
+        .ui-tab .tab-body .tab-body-item {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            display: block;
+            padding: 10px 15px;
+            position: absolute;
+            visibility: hidden;
+            border-style: solid;
+            border-color: #3399ff;
+            background-color: #fff;
+            border-width: 0px 0px 1px 0px;
+            transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+        }
+
+            .ui-tab .tab-body .tab-body-item.active {
+                opacity: 1;
+                position: relative;
+                visibility: visible;
+            }
+
+.ajax-loader {
+    margin: 10px auto;
+    width: 63px;
+    padding: 2px 0px;
+}
+
+    .ajax-loader:before,
+    .ajax-loader:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    .ajax-loader > .loader-item {
+        width: 11px;
+        height: 11px;
+        float: left;
+        border-radius: 50%;
+        box-sizing: border-box;
+        margin: 0px 2px 0px 0px;
+        border: 1px solid #39f;
+        background-color: #f5f5f5;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+        .ajax-loader > .loader-item:nth-of-type(1) {
+            animation-name: loading;
+            animation-delay: 0.0s;
+            animation-duration: 3s;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+
+        .ajax-loader > .loader-item:nth-of-type(2) {
+            animation-name: loading;
+            animation-delay: 600ms;
+            animation-duration: 3s;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+
+        .ajax-loader > .loader-item:nth-of-type(3) {
+            animation-name: loading;
+            animation-delay: 1200ms;
+            animation-duration: 3s;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+
+        .ajax-loader > .loader-item:nth-of-type(4) {
+            animation-name: loading;
+            animation-delay: 1800ms;
+            animation-duration: 3s;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+
+        .ajax-loader > .loader-item:nth-of-type(5) {
+            animation-name: loading;
+            animation-delay: 2400ms;
+            animation-duration: 3s;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            margin: 0px 0px 0px 0px;
+        }
